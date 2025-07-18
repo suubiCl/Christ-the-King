@@ -8,110 +8,42 @@ const Gallery = () => {
   const navigate = useNavigate();
 
   const galleryImages = [
-    {
-      src: '/gallery/471118833_1109661280544820_2760270409712801570_n.jpg',
-      title: 'Student Group Photo',
-      description: 'Our dedicated students in their college uniforms, representing the future of early childhood education',
-      category: 'Students'
-    },
-    {
-      src: '/gallery/472578312_1120525676125047_4605457454840032170_n.jpg',
-      title: 'Morning Assembly',
-      description: 'Students gathering for morning assembly on the college grounds',
-      category: 'Campus Life'
-    },
-    {
-      src: '/gallery/89777759_139868067524151_5580944709888507904_n.jpg',
-      title: 'Academic Excellence',
-      description: 'Students demonstrating their commitment to academic excellence',
-      category: 'Students'
-    },
-    {
-      src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.00 PM.jpeg',
-      title: 'College Campus',
-      description: 'Beautiful view of our college buildings and facilities in Ngetta',
-      category: 'Campus'
-    },
-    {
-      src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.01 PM (1).jpeg',
-      title: 'Student Activities',
-      description: 'Students engaged in various educational activities',
-      category: 'Campus Life'
-    },
-    {
-      src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.01 PM.jpeg',
-      title: 'Community Event',
-      description: 'Students and faculty participating in a community outreach program',
-      category: 'Events'
-    },
-    {
-      src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.02 PM (1).jpeg',
-      title: 'Practical Training',
-      description: 'Students receiving hands-on practical training in early childhood education',
-      category: 'Campus Life'
-    },
-    {
-      src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.02 PM.jpeg',
-      title: 'Campus Facilities',
-      description: 'Modern facilities supporting quality education and training',
-      category: 'Campus'
-    },
-    {
-      src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.03 PM.jpeg',
-      title: 'Student Graduation',
-      description: 'Celebrating our graduates as they complete their training',
-      category: 'Events'
-    },
-    {
-      src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.04 PM (1).jpeg',
-      title: 'Learning Environment',
-      description: 'Students in their natural learning environment',
-      category: 'Campus Life'
-    },
-    {
-      src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.04 PM.jpeg',
-      title: 'Group Study',
-      description: 'Collaborative learning and group study sessions',
-      category: 'Students'
-    },
-    {
-      src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.07 PM (1).jpeg',
-      title: 'Field Experience',
-      description: 'Students gaining valuable field experience in real educational settings',
-      category: 'Events'
-    },
-    {
-      src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.07 PM.jpeg',
-      title: 'Campus Life',
-      description: 'Daily life and activities on our vibrant campus',
-      category: 'Campus Life'
-    },
-    {
-      src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.08 PM (1).jpeg',
-      title: 'Educational Workshop',
-      description: 'Interactive workshops enhancing teaching methodologies',
-      category: 'Events'
-    },
-    {
-      src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.08 PM (2).jpeg',
-      title: 'Student Assembly',
-      description: 'Students gathering for important college assemblies and announcements',
-      category: 'Campus Life'
-    },
-    {
-      src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.08 PM.jpeg',
-      title: 'College Community',
-      description: 'The vibrant community of Christ the King Nursery Teachers College',
-      category: 'Campus'
-    }
+    // All gallery images - clean and simple
+    { src: '/gallery/471118833_1109661280544820_2760270409712801570_n.jpg' },
+    { src: '/gallery/472578312_1120525676125047_4605457454840032170_n.jpg' },
+    { src: '/gallery/89777759_139868067524151_5580944709888507904_n.jpg' },
+    { src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.00 PM.jpeg' },
+    { src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.01 PM (1).jpeg' },
+    { src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.01 PM.jpeg' },
+    { src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.02 PM (1).jpeg' },
+    { src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.02 PM.jpeg' },
+    { src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.03 PM.jpeg' },
+    { src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.04 PM (1).jpeg' },
+    { src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.04 PM.jpeg' },
+    { src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.07 PM (1).jpeg' },
+    { src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.07 PM.jpeg' },
+    { src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.08 PM (1).jpeg' },
+    { src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.08 PM (2).jpeg' },
+    { src: '/gallery/WhatsApp Image 2025-07-04 at 6.31.08 PM.jpeg' },
+    { src: '/gallery/IMG_1082.JPG' },
+    { src: '/gallery/IMG_1087.JPG' },
+    { src: '/gallery/IMG_1088.JPG' },
+    { src: '/gallery/IMG_1089.JPG' },
+    { src: '/gallery/IMG_1090.JPG' },
+    { src: '/gallery/IMG_1091.JPG' },
+    { src: '/gallery/IMG_1092.JPG' },
+    { src: '/gallery/IMG_1093.JPG' },
+    { src: '/gallery/IMG_1094.JPG' },
+    { src: '/gallery/IMG_1095.JPG' },
+    { src: '/gallery/IMG_1096.JPG' },
+    { src: '/gallery/IMG_1097.JPG' },
+    { src: '/gallery/IMG_1098.JPG' },
+    { src: '/gallery/IMG_1099.JPG' },
+    { src: '/gallery/IMG_1100.JPG' },
+    { src: '/gallery/IMG_1101.JPG' }
   ];
 
-  const categories = ['All', 'Students', 'Campus Life', 'Campus', 'Events'];
-  const [activeCategory, setActiveCategory] = useState('All');
 
-  const filteredImages = activeCategory === 'All' 
-    ? galleryImages 
-    : galleryImages.filter(img => img.category === activeCategory);
 
   const openLightbox = (index: number) => {
     setSelectedImage(index);
@@ -123,13 +55,13 @@ const Gallery = () => {
 
   const nextImage = () => {
     if (selectedImage !== null) {
-      setSelectedImage((selectedImage + 1) % filteredImages.length);
+      setSelectedImage((selectedImage + 1) % galleryImages.length);
     }
   };
 
   const prevImage = () => {
     if (selectedImage !== null) {
-      setSelectedImage(selectedImage === 0 ? filteredImages.length - 1 : selectedImage - 1);
+      setSelectedImage(selectedImage === 0 ? galleryImages.length - 1 : selectedImage - 1);
     }
   };
 
@@ -137,22 +69,22 @@ const Gallery = () => {
     {
       icon: Users,
       title: 'Student Life',
-      description: 'Vibrant campus community with diverse learning experiences'
+      description: 'Vibrant campus community with diverse learning experiences and friendships'
     },
     {
       icon: BookOpen,
-      title: 'Academic Excellence',
-      description: 'Modern facilities supporting quality education delivery'
+      title: 'Learning & Teaching',
+      description: 'Innovative teaching methods and hands-on practical training sessions'
     },
     {
       icon: Award,
-      title: 'Achievements',
-      description: 'Celebrating milestones and student accomplishments'
+      title: 'Celebrations & Events',
+      description: 'Celebrating achievements, milestones, and cultural activities'
     },
     {
       icon: Camera,
-      title: 'Campus Events',
-      description: 'Regular activities fostering community and learning'
+      title: 'Community Outreach',
+      description: 'Engaging with local communities and making a positive impact'
     }
   ];
 
@@ -188,59 +120,60 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Gallery Filter */}
-      <section className="py-20 bg-gray-50">
+      {/* Stylish Photo Gallery */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-blue-800 mb-8">Photo Gallery</h2>
-
-            {/* Category Filter */}
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => setActiveCategory(category)}
-                  className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
-                    activeCategory === category
-                      ? 'bg-blue-800 text-white'
-                      : 'bg-white text-blue-800 border border-blue-800 hover:bg-blue-800 hover:text-white'
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
-            </div>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-blue-800 mb-4">Photo Gallery</h2>
+            <p className="text-xl text-gray-600">Moments that capture our vibrant college community</p>
           </div>
 
-          {/* Gallery Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredImages.map((image, index) => (
+          {/* Masonry-style Gallery Grid */}
+          <div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
+            {galleryImages.map((image, index) => (
               <div
                 key={index}
-                className="group cursor-pointer overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
+                className="group cursor-pointer break-inside-avoid mb-6"
                 onClick={() => openLightbox(index)}
               >
-                <div className="relative">
+                <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
                   <img
                     src={image.src}
-                    alt={image.title}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    alt={`Gallery image ${index + 1}`}
+                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+                    style={{
+                      aspectRatio: 'auto',
+                      minHeight: '200px',
+                      maxHeight: '400px'
+                    }}
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-                    <Camera className="h-12 w-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 transform scale-0 group-hover:scale-100 transition-transform duration-300">
+                        <Camera className="h-8 w-8 text-white" />
+                      </div>
+                    </div>
                   </div>
-                  <div className="absolute top-4 right-4">
-                    <span className="bg-pink-300 text-indigo-900 px-3 py-1 rounded-full text-sm font-semibold">
-                      {image.category}
-                    </span>
-                  </div>
-                </div>
-                <div className="bg-white p-6">
-                  <h3 className="text-xl font-bold text-indigo-800 mb-2">{image.title}</h3>
-                  <p className="text-gray-700 text-sm">{image.description}</p>
+                  {/* Subtle corner accent */}
+                  <div className="absolute top-0 right-0 w-0 h-0 border-l-[30px] border-l-transparent border-t-[30px] border-t-pink-300/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Gallery Stats */}
+          <div className="mt-16 text-center">
+            <div className="inline-flex items-center space-x-8 bg-white/80 backdrop-blur-sm rounded-full px-8 py-4 shadow-lg">
+              <div className="flex items-center space-x-2">
+                <Camera className="h-5 w-5 text-blue-800" />
+                <span className="text-blue-800 font-semibold">{galleryImages.length} Photos</span>
+              </div>
+              <div className="w-px h-6 bg-gray-300"></div>
+              <div className="flex items-center space-x-2">
+                <Image className="h-5 w-5 text-pink-400" />
+                <span className="text-gray-600">Campus Life Captured</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -271,15 +204,10 @@ const Gallery = () => {
             </button>
 
             <img
-              src={filteredImages[selectedImage].src}
-              alt={filteredImages[selectedImage].title}
-              className="max-w-full max-h-full object-contain rounded-lg"
+              src={galleryImages[selectedImage].src}
+              alt={`Gallery image ${selectedImage + 1}`}
+              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
             />
-            
-            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-white p-6 rounded-b-lg">
-              <h3 className="text-xl font-bold mb-2">{filteredImages[selectedImage].title}</h3>
-              <p className="text-gray-300">{filteredImages[selectedImage].description}</p>
-            </div>
           </div>
         </div>
       )}
